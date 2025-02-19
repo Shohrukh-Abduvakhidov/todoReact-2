@@ -13,7 +13,7 @@ const App = () => {
       id: 2,
       title: "The  tittle",
       description:
-        "lorem lorem lorem loremloremloremlorem lorem lorem loremloremloremlorem lorem lorem loremloremloremlorem lorem ",
+        "lorem lorem lorem  loremloremlo loremloremloremlorem lorem ",
       status: true,
     },
     {
@@ -94,7 +94,9 @@ const App = () => {
     <>
       <section className="flex w-[90%] m-auto items-start flex-col lg:flex-row">
         <aside className="lg:w-[300px]  z-2 lg:bg-transparent bg-white fixed w-[100%]">
-          <h1 className="lg:text-[64px] text-[40px] text-[#808080] font-bold">TODO</h1>
+          <h1 className="lg:text-[64px] text-[40px] text-[#808080] font-bold">
+            TODO
+          </h1>
           <input
             type="text"
             value={search}
@@ -143,7 +145,7 @@ const App = () => {
         </aside>
         <aside className="w-[80%] m-auto lg:mt-0 mt-[220px] lg:ml-[300px] relative py-[30px] flex gap-[60px] flex-wrap">
           {filteredData.length === 0 ? (
-            <h1 className="text-[70px] text-[red] font-bold top-[200px] left-[30%]  absolute">
+            <h1 className="text-[70px] text-[red] font-bold lg:top-[200px] text-center lg:left-[30%]  absolute">
               NOT FOUND
             </h1>
           ) : (
