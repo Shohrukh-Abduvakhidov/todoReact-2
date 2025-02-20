@@ -105,7 +105,7 @@ const App = () => {
             placeholder="search..."
           />{" "}
           <br />
-          <div className="flex items-center lg:flex-row flex-row-reverse lg:justify-start justify-between lg:mx-0 mx-[50px] gap-[30px]">
+          <div className="flex lg:absolute top-[1%] right-[-850px] items-center lg:flex-row flex-row-reverse lg:justify-start justify-between lg:mx-0 mx-[50px] gap-[30px]">
             <select
               name=""
               className="text-[18px] border-[gray] py-[10px] px-[15px] rounded-2xl my-[20px] font-bold border-2"
@@ -143,7 +143,7 @@ const App = () => {
             <p className="text-[30px] text-[#808080] font-bold">family</p>
           </div>
         </aside>
-        <aside className="w-[80%] m-auto lg:mt-0 mt-[220px] lg:ml-[300px] relative py-[30px] flex gap-[60px] flex-wrap">
+        <aside className="w-[80%] m-auto pt-[100px] lg:mt-0 mt-[220px] lg:ml-[300px] relative py-[30px] flex gap-[60px] flex-wrap">
           {filteredData.length === 0 ? (
             <h1 className="text-[70px] text-[red] font-bold lg:top-[200px] text-center lg:left-[30%]  absolute">
               NOT FOUND
